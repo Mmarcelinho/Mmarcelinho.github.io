@@ -14,7 +14,7 @@ Já que configuramos a conexão e geramos o database, vamos prosseguir com a con
 
 Adicione os pacotes que vão ser utilizados:
 
-```
+```csharp
 dotnet add package FluentMigrator
 dotnet add package FluentMigrator.Runner
 ```
@@ -52,7 +52,9 @@ Agora, vamos configurar o FluentMigrator. Para isso, crie o seguinte método na 
 ```csharp
 private static void AdicionarFluentMigrator(IServiceCollection services, IConfiguration configuration)
 {
-    services.AddFluentMigratorCore().ConfigureRunner(c => c.AddMySql8().WithGlobalConnectionString(configuration.GetConexaoCompleta()).ScanIn(Assembly.Load("SistemaDeEstoque.Infrastructure")).For.All());
+    services.AddFluentMigratorCore().ConfigureRunner(c => c.AddMySql8()
+    .WithGlobalConnectionString(configuration.GetConexaoCompleta())
+    .ScanIn(Assembly.Load("SistemaDeEstoque.Infrastructure")).For.All());
 }
 ```
 
@@ -110,5 +112,7 @@ void AtualizarBaseDeDados()
     app.MigrateBancoDeDados();
 }
 ```
+
+O código está pronto para gerar as migrações, na próxima parte iremos criar a primeira versão da migração com uma tabela de exemplo.
 
 [[FluentMigrator com MySQL para migrações de esquemas mais simples Pt.3]]

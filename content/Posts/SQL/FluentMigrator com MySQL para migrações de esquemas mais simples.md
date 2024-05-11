@@ -42,7 +42,7 @@ Agora, vamos criar um método de extensão para obter o nome do banco de dados, 
 
 Adicione o pacote para ter acesso à interface IConfiguration:
 
-```
+```csharp
 dotnet add package Microsoft.Extensions.Configuration
 ```
 
@@ -83,7 +83,7 @@ Após configurar a ConnectionString vamos verificar se o schema do database já 
 
 Para realizar essa verificação, precisaremos de dois pacotes:
 
-```
+```csharp
 dotnet add package Dapper;
 dotnet add package MySqlConnector;
 ```
@@ -139,9 +139,9 @@ public static class Database
 
 Se não houver registros, o database será criado com o nome passado por parâmetro.
 
-### Invocando o Método
+### Main
 
-Para que o método funcione, é necessário invocá-lo na classe principal do projeto, onde os serviços estão contidos.
+Para que o método funcione, é necessário chamá-lo na classe principal do projeto, onde os serviços estão contidos.
 
 No arquivo Program.cs, crie uma função para chamar o método e passar os parâmetros:
 
@@ -175,6 +175,8 @@ void AtualizarBaseDeDados()
 }
 ```
 
-Ao rodar o projeto poderá verificar no MySQL que o schema foi gerado.
+Ao executar o projeto poderá verificar no MySQL que o schema foi gerado.
+
+Próximo passo é configurar as migrações para gerar as tabelas.
 
 [[FluentMigrator com MySQL para migrações de esquemas mais simples Pt.2]]
