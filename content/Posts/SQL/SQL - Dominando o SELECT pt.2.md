@@ -1,5 +1,5 @@
 ---
-title: SQL - Dominando o SELECT pt.2
+title: SQL - Dominando o SELECT Pt.2
 date: 2024-04-02
 tags:
   - SQL
