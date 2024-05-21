@@ -48,7 +48,7 @@ public enum NumeroVersoes
 }
 ```
 
-### Primeira Versão
+### Primeira versão
 
 No diretório `Migrations/Versoes`, crie a classe `Versao0000001`.
 

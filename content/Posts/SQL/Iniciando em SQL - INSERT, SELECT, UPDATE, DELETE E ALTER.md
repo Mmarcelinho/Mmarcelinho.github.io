@@ -1,5 +1,5 @@
 ---
-title: Iniciando em SQL - SELECT, UPDATE, DELETE E ALTER
+title: Iniciando em SQL - INSERT, SELECT, UPDATE, DELETE E ALTER
 date: 2024-04-02
 tags:
   - SQL

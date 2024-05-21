@@ -150,7 +150,7 @@ sistemaDeAlerta.DesinscreverNoEventoDeMudancaDeTemperatura(termometro);
     }
 ```
 
-### 2. Uso de `EventHandler` vs. Delegates Personalizados
+### 2. Uso de `EventHandler` vs. Delegates personalizados
 
 `EventHandler` e `EventHandler<TEventArgs>` são suficientes para a maioria dos eventos. No entanto, se precisar de uma assinatura de evento que não se encaixe no padrão `(object sender, TEventArgs e)`, um delegate personalizado pode ser necessário.
 
@@ -187,7 +187,7 @@ protected virtual void AoMudarTemperatura(MudancaTemperaturaEventArgs e)
 }
 ```
 
-## **Boas Práticas**
+## **Boas práticas**
 
 - **Evitar operações de longa duração nos manipuladores de eventos**
  

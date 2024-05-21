@@ -1,5 +1,5 @@
 ---
-title: Como Verificar a Existência de um Item no Banco de Dados com Dapper
+title: Como Verificar a existência de um item no banco de dados com Dapper
 date: 2024-05-20
 tags:
   - CSharp
@@ -8,7 +8,7 @@ tags:
   - MYSQL
   - Dapper
 ---
-### Como Verificar a Existência de um Item no Banco de Dados com Dapper
+### Como verificar a existência de um item no banco de dados com Dapper
 
 Neste post, vou mostrar como verificar se um item existe no banco de dados utilizando Dapper, uma biblioteca leve para mapeamento de objetos e bancos de dados em .NET.
 
@@ -23,7 +23,7 @@ public interface IAdminReadOnlyRepositorio
 }
 ```
 
-### Criando a Query
+### Criando a query
 
 Em seguida, vamos criar uma query que conta quantos registros possuem o email fornecido:
 
@@ -44,7 +44,7 @@ public static QueryModel RecuperarAdminExistentePorEmailQuery(string email)
 
 Essa query executa um `SELECT COUNT(*)` na tabela especificada e verifica quantos registros possuem o email fornecido como parâmetro.
 
-### Implementando o Método
+### Implementando o método
 
 Agora, vamos implementar o método que utiliza essa query. Primeiro, chamamos o método estático que cria a query e passamos o parâmetro `email`:
 
@@ -55,7 +55,7 @@ public async Task<bool> ExisteAdminComEmail(string email)
 }
 ```
 
-### Executando a Query
+### Executando a query
 
 Para executar a query, utilizamos o método `ExecuteScalarAsync()`, que retorna o valor da contagem:
 
@@ -69,7 +69,7 @@ public async Task<bool> ExisteAdminComEmail(string email)
 
 O método `ExecuteScalarAsync<int>()` realiza a consulta e converte o resultado para `int`, armazenando-o na variável `count`.
 
-### Verificando o Resultado
+### Verificando o resultado
 
 Finalmente, retornamos `true` se `count` for maior que 0, indicando que o email existe na tabela:
 

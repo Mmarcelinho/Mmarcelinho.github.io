@@ -38,7 +38,7 @@ Primeiramente, instale o pacote Dapper:
 dotnet add package Dapper
 ```
 
-### Configurando a Conexão com o Banco de Dados
+### Configurando a conexão com o banco de dados
 
 Precisamos configurar a conexão com o banco de dados utilizando `IDbConnection`, que representa uma conexão aberta com uma fonte de dados. O Dapper adiciona métodos à interface `IDbConnection` que permitem executar consultas SQL e mapear os resultados para objetos no seu código.
 
@@ -55,7 +55,7 @@ private static void AdicionarDbConnection(IServiceCollection services, IConfigur
 }
 ```
 
-### Adicionando o Repositório
+### Adicionando o repositório
 
 Configuramos o repositório e adicionamos a injeção de dependência.
 
@@ -66,7 +66,7 @@ private static void AdicionarRepositorios(IServiceCollection services)
 }
 ```
 
-### Chamando os Métodos Estáticos
+### Chamando os métodos estáticos
 
 Configuramos os métodos estáticos para adicionar os serviços necessários.
 
@@ -90,7 +90,7 @@ public static class ContextMapping
 }
 ```
 
-### Classe para Retornar a Query e Parâmetros
+### Classe para retornar a query e parâmetros
 
 Definimos uma classe para encapsular a query e os parâmetros.
 
@@ -116,11 +116,11 @@ public static class AdminQueries
 }
 ```
 
-### ### Implementação no Repositório
+###  Implementação no repositório
 
 Vamos detalhar como implementar o repositório para utilizar o Dapper de forma eficiente.
 
-#### Estrutura do Repositório
+#### Estrutura do repositório
 
 Primeiro, criamos uma classe `AdminRepositorio` que implementa a interface `IAdminReadOnlyRepositorio`. Precisamos injetar o `IDbConnection` via construtor para que o Dapper possa utilizar uma instância de conexão com o banco de dados.
 
@@ -164,7 +164,7 @@ public async Task<Admin> RecuperarPorId(long id)
 ```csharp
 return admin;
 ```
-### Testando o Código
+### Testando o código
 
 Em `Program.cs`, adicionamos uma rota para testar a implementação:
 

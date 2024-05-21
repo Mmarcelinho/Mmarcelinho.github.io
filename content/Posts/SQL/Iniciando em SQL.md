@@ -279,5 +279,5 @@ Quando usar `VARCHAR` e `CHAR`?
 
 Este é um guia básico de SQL na prática. Explore mais fontes para aprofundar seu conhecimento, já que alguns tópicos não foram cobertos aqui. No próximo post, abordarei operações como inserir, atualizar, deletar e modificar dados nas tabelas.
 
-[[Iniciando em SQL - SELECT, UPDATE, DELETE E ALTER]]
+[[Iniciando em SQL - INSERT, SELECT, UPDATE, DELETE E ALTER]]
 

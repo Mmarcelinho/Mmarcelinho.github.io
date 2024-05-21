@@ -14,7 +14,7 @@ Criar mensagens de erro e exceções padronizadas ajuda a manter um código mais
 
 Em meus projetos, geralmente crio esses modelos no projeto `Exceptions`, onde configuro o tratamento de exceções.
 
-#### Criando o Modelo de Mensagens de Erro
+#### Criando o modelo de mensagens de erro
 
 1. **Criação da Classe:**
    Primeiro, crie uma classe com o nome que representa a entidade para a qual você deseja criar essas mensagens:
@@ -39,7 +39,7 @@ Em meus projetos, geralmente crio esses modelos no projeto `Exceptions`, onde co
    - **Tipo String:** A variável deve ser do tipo string.
    - **Nomeação:** Nomeie as variáveis em maiúsculas e com underscores, seguindo a convenção para constantes.
 
-#### Código Completo do Modelo
+#### Código completo do modelo
 
 ```csharp
 namespace SistemaDeEstoque.Exceptions.ErrorMessages;
@@ -61,7 +61,7 @@ public static class UsuarioModelMensagensDeErro
 }
 ```
 
-#### Exemplos de Utilização
+#### Exemplos de utilização
 
 1. **Validação:**
 

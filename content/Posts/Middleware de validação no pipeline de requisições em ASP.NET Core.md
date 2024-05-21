@@ -18,7 +18,7 @@ O pipeline de requisições é responsável por:
 - Processar essas requisições.
 - Gerar e retornar as respostas correspondentes.
 
-### Componentes do Pipeline
+### Componentes do pipeline
 
 - **Middlewares**: São os componentes que compõem o pipeline. Cada middleware tem a responsabilidade de processar a requisição de maneira específica.
 - **Operações dos Middlewares**: Incluem autenticação, roteamento, tratamento de erros, entre outras funções.
@@ -36,9 +36,9 @@ Ao utilizar o behavior do MediatR, a lógica de validação é inserida dentro d
 
 ![[Modelo de pipeline com validação.png]]
 
-## Etapas para Implementação:
+## Etapas para implementação:
 
-### Inclusão do Pacote FluentValidation
+### Inclusão do pacote FluentValidation
 
 Para incluir o pacote FluentValidation no projeto Application, utilize os seguintes comandos:
 
@@ -47,7 +47,7 @@ dotnet add package FluentValidation
 dotnet add package FluentValidation.DependencyInjectionExtensions
 ```
 
-### Implementação da Classe `ValidationsBehavior`
+### Implementação da classe `ValidationsBehavior`
 
 A seguir, implementaremos a classe `ValidationsBehavior`, que atuará como middleware de validação para as requisições.
 
@@ -100,7 +100,7 @@ O método `Handle` é responsável por realizar a validação. Ele verifica se h
 - **Exceção de Validação**: Se houver falhas, lança uma exceção (`ValidationException`).
 - **Próximo Middleware**: Caso contrário, chama o próximo middleware no pipeline (`next()`).
 
-### Registro do `ValidationsBehavior` no Serviço
+### Registro do `ValidationsBehavior` no serviço
 
 Para que o `ValidationsBehavior` funcione corretamente, precisamos registrá-lo no serviço do ASP.NET Core. Abaixo está um exemplo de como fazer isso:
 

@@ -77,7 +77,7 @@ public static class RepositorioExtension
 
 Com essas configurações básicas concluídas, vamos agora para o projeto Infrastructure, onde toda a configuração do banco de dados será realizada.
 
-### Verificação do Schema
+### Verificação do schema
 
 Após configurar a ConnectionString vamos verificar se o schema do database já existe no MySQL. Caso não exista, será criado com o nome configurado no arquivo appsettings.json.
 
