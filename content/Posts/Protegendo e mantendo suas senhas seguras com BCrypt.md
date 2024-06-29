@@ -156,7 +156,7 @@ Este hash é composto por:
 
 ### Exemplo 2: Verificando a Senha no Login
 
-No exemplo a seguir, mostramos como verificar a senha durante o processo de login do administrador:
+No exemplo a seguir, mostramos como verificar a senha durante o processo de login do `Usuário`:
 
 ```csharp
 private readonly IEncriptadorDeSenha _encriptadorDeSenha;
