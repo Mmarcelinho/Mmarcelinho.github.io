@@ -1,3 +1,8 @@
+---
+title: Personal Blog
+tags:
+---
+
 ![[Dexter.gif]]
 
 ### Bem-vindo ao Meu Blog!
