@@ -1,8 +1,4 @@
----
-title: My Notes
-date: 2024-03-30
-tags:
----
+![[Dexter.gif]]
 
 ### Bem-vindo ao Meu Blog!
 
